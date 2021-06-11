@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chat/screens/chatsScreen.dart';
+import 'package:flutter_chat/screens/chatsScreen/chatsScreen.dart';
 import 'package:flutter_chat/utils/authentication.dart';
 
 class GoogleSignInButton extends StatefulWidget {
@@ -56,7 +56,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Image(
-                      image: AssetImage("assets/images/google_logo.png"),
+                      image: AssetImage("assets/logos/google_logo.png"),
                       height: 35.0,
                     ),
                     Padding(
