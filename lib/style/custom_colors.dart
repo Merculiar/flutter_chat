@@ -8,4 +8,5 @@ class CustomColors {
   static final Color baseGrey = Color(0xFFECEFF1);
   static final Color googleBackground = Color(0xFF4285F4);
   static final Color grey = Colors.grey;
+  static final Color white = Colors.white;
 }
