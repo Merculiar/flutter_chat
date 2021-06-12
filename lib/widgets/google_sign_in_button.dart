@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chat/screens/chatsScreen/chatsScreen.dart';
+import 'package:flutter_chat/screens/main/main.dart';
 import 'package:flutter_chat/utils/authentication.dart';
 
 class GoogleSignInButton extends StatefulWidget {
@@ -42,7 +42,7 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                 if (user != null) {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
-                      builder: (context) => ChatsScreen(
+                      builder: (context) => MainScreen(
                         user: user,
                       ),
                     ),

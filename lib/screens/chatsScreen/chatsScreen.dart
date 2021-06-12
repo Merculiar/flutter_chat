@@ -47,6 +47,15 @@ class _ChatsScreenState extends State<ChatsScreen> {
     super.initState();
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: CustomColors.white,
+      appBar: buildAppBar(),
+      body: Body(),
+    );
+  }
+
   AppBar buildAppBar() {
     return AppBar(
       backgroundColor: CustomColors.baseNavy,
@@ -105,15 +114,6 @@ class _ChatsScreenState extends State<ChatsScreen> {
           ),
         ],
       ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: CustomColors.white,
-      appBar: buildAppBar(),
-      body: Body(),
     );
   }
 }

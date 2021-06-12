@@ -17,43 +17,43 @@ class ChatMessage {
 
 List demeChatMessages = [
   ChatMessage(
-    text: "Hi Sajol,",
+    text: "Hello",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.viewed,
     isSender: false,
   ),
   ChatMessage(
-    text: "Hello, How are you?",
+    text: "Hello",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.viewed,
     isSender: true,
   ),
   ChatMessage(
-    text: "",
+    text: "Hello",
     messageType: ChatMessageType.audio,
     messageStatus: MessageStatus.viewed,
     isSender: false,
   ),
   ChatMessage(
-    text: "",
+    text: "Hello",
     messageType: ChatMessageType.video,
     messageStatus: MessageStatus.viewed,
     isSender: true,
   ),
   ChatMessage(
-    text: "Error happend",
+    text: "Hello",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.not_sent,
     isSender: true,
   ),
   ChatMessage(
-    text: "This looks great man!!",
+    text: "Hello",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.viewed,
     isSender: false,
   ),
   ChatMessage(
-    text: "Glad you like it",
+    text: "Hello",
     messageType: ChatMessageType.text,
     messageStatus: MessageStatus.not_view,
     isSender: true,
