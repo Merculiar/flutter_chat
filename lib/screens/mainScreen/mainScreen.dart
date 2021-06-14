@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat/screens/chatsScreen/chatsScreen.dart';
-import 'package:flutter_chat/screens/moreScreen.dart/moreScreen.dart';
+import 'package:flutter_chat/screens/moreScreen/moreScreen.dart';
 import 'package:flutter_chat/screens/notificationsScreen/notificationsScreen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -16,23 +16,22 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-
+  int screenIndex = 0;
   @override
   Widget build(BuildContext context) {
-    int pageIndex = 0;
-    List<Widget> pageList = <Widget>[
+    List<Widget> screenList = <Widget>[
       ChatsScreen(user: widget._user),
       MoreScreen(),
       NotificationsScreen(),
     ];
 
     return Scaffold(
-      body: pageList[pageIndex],
+      body: screenList[screenIndex],
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: pageIndex,
+        currentIndex: screenIndex,
         onTap: (value) {
           setState(() {
-            pageIndex = value;
+            screenIndex = value;
           });
         },
         items: [

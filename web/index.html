@@ -93,6 +93,30 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+      </script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyA55C9-wCDAPYFVJzOooHf8iz4GF1XlPmQ",
+      authDomain: "mychat-b7dad.firebaseapp.com",
+      projectId: "mychat-b7dad",
+      storageBucket: "mychat-b7dad.appspot.com",
+      messagingSenderId: "718619582525",
+      appId: "1:718619582525:web:7575654b060f4535d80a54",
+      measurementId: "G-TQFE5N3BY5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
 </body>
 </html>

@@ -62,37 +62,39 @@ class _ChatsScreenState extends State<ChatsScreen> {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          _user.photoURL != null
-              ? CircleAvatar(
-                  radius: 20,
-                  backgroundImage: NetworkImage(_user.photoURL!),
-                )
-              : ClipOval(
-                  child: Material(
-                    color: CustomColors.baseGrey.withOpacity(0.3),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Icon(
-                        Icons.person,
-                        size: 30,
-                        color: CustomColors.baseGrey,
+          SizedBox(
+            height: 40,
+            width: 40,
+            child: _user.photoURL != null
+                ? CircleAvatar(
+                    radius: 20,
+                    backgroundImage: NetworkImage(_user.photoURL!),
+                  )
+                : ClipOval(
+                    child: Material(
+                      color: CustomColors.baseGrey.withOpacity(0.3),
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Icon(
+                          Icons.person,
+                          size: 30,
+                          color: CustomColors.baseGrey,
+                        ),
                       ),
                     ),
                   ),
-                ),
-          Row(
-            children: [
-              SizedBox(width: 12),
-              Text(
-                'MyChat',
-                style: TextStyle(
-                  color: CustomColors.baseGrey,
-                  fontSize: 20,
-                ),
-              ),
-            ],
           ),
-          Container(
+          Text(
+            'MyChat',
+            textAlign: TextAlign.start,
+            style: TextStyle(
+              color: CustomColors.baseGrey,
+              fontSize: 20,
+            ),
+          ),
+          SizedBox(
+            height: 40,
+            width: 40,
             child: _isSigningOut
                 ? CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(Colors.black),
